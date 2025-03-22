@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div > p{
+            display: none;
+            /*Nesse codigo onde eu escondo o paragrafo dentro da div onde ele n ira mostrar o paragrafo*/
+        }
+        div:hover > p{
+            display: block;
+            color: rgb(0, 0, 0);
+            background-color: rgba(26, 248, 26, 0.808);
+            /*Nesse codigo eu fiz aparecer o paragrado que estar dentro da div que tava apagado por conta ocodigo acima dando caracterista de cor preta e fundo verder */
+            width: 300px;
+
+        }
+        div:hover{color: red;}
+        /*Nesse codigo onde eu passar o mouse na div ela vai ficar vermelha...*/
+    </style>
+</head>
+<body>
+    <h1>Exemplo</h1>
+    <p>Passe o mouse no texto abaixo</p>
+    <div>
+        passe o mouse aqui...
+        <p>Texto escondido</p>
+
+    </div>
+    <p>fim do Exemplo</p>
+    
+</body>
+</html>

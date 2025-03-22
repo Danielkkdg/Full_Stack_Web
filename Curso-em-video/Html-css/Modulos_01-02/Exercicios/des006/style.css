@@ -1,0 +1,241 @@
+@charset "UTF-8";
+@font-face {
+    font-family: IDroid;
+    src: url('fontes/IDroid.otf')
+    format(opentype);
+}
+@font-face {
+    font-family: BebasNeue-Regular;
+    src: url('fontes/BebasNeue-Regular.ttf')
+    format(truetype)
+}
+
+  
+
+:root{
+    --cor1:#c5ebd5;
+    --cor2:#83e1ad;
+    --cor3:#3ddc84;
+    --cor4:#2fa866;
+    --cor5:#1a5c37;
+    --cor6:#063d1e;
+
+    --fonte-padrao:arial,verdana,Helvetica,sans-serif;
+    --font-destaque:'BebasNeue-Regular', serif;
+    --font-android:'IDroid';
+/*O root server como auxiliar em manter o padrao tanto de letras como de fonts sendo muito util */
+
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+a.exet::after{
+    content: '\🔗';
+    /*esse codigo vai fazer q os meus links dentro da minha class recebam emoji*/
+
+}
+
+body{
+    background-color: var(--cor2);
+    font-family: var(--fonte-padrao); 
+}
+
+/*display: inline-block;*/
+header{
+    
+    background-image: linear-gradient(to bottom,var(--cor3),var(--cor5) );
+
+    text-align: center;
+    min-height: 150px;
+    padding-top: 40px;
+    
+    
+}
+header>h1{
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px black;
+    font-weight: normal;
+   
+    
+}
+header>p{
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 500px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+    text-shadow: 2px 2px 0px black;
+    
+    
+    
+    
+
+}
+
+nav{
+    padding: 20px;
+    background-color: var(--cor5);
+    box-shadow: 0px 7px 7px rgb(0, 0, 0);
+    
+}
+nav>a{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    /*text-decoration tira o sublinhado*/
+    font-weight: bold;
+    /*font-weight para deixar negrito*/
+    transition-duration: .5s;
+    /*transition-duration: codigo para efeito ao passar o mouse como se fosse seguindo vc ajusta quantos segundos vc desejar ".5s" no caso aqui foi 5 segundos*/
+}
+nav>a:hover{
+    background-color: var(--cor3);
+}
+
+main{
+    min-width: 300px;
+    /*largura minima da tela*/
+    max-width: 1000px;
+    /*largura maxima da tela*/
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /*para altera as bordas inferiores*/
+    
+    
+}
+main p {
+    margin: 15px 0px ;
+    /*esse margin foi usado para separ a parte de cima e a parte de baixo dos paragrafo deixando com a margin de 15px em cima e em baixo e 0 para esquerda e direita*/
+    text-align: justify;
+    text-indent: 30px;
+    /*text-ident serve para dar espaco pro paragrafo*/
+    font-size: 1.1em;
+    /*font-size para aumenta o tamanho*/
+    line-height: 1.5em;
+    /*espaco das linhas no caso aqui e horizontal */
+
+}
+main strong{
+    color: var(--cor5);
+    padding: 2px 6px;
+    font-weight: bold;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--cor2);
+    color: var(--cor5);
+}
+main a:hover{
+    text-decoration: underline;
+    /*codigo acima serve para deixar com aspecto de link*/
+    color: var(--cor1);
+}
+main h2{
+    color: var(--cor4);
+    font-weight: normal;
+}
+img{
+    width: 100%;
+    /*width de 100% serve para ao diminuir a tela a imagem vai acompanhando aos poucos */
+}
+.pequena{
+    display: block;
+    max-width: 350px;
+    margin: auto;
+}
+
+main h1{
+    color:var(--cor5);
+    font-size: 2em;
+    
+}
+main h1,h2{
+    color: var(--cor5);
+    font-family: var(--font-android);
+}
+main h2{
+    background-image: linear-gradient(to left ,white,var(--cor2));
+}
+div.video{
+    background-color: var(--cor5);
+    margin-bottom: 30px;
+    margin: 0px -20px 30px  -20px;
+    /*essar margin fiz com que ela saisse pra fora juntando com as lateral do main e dei um espaçamento embaixo*/
+    padding: 20px;
+    /*para centralizar o video foi necessario os dois codigos a baixo  e os
+    div.video>iframe a baixo para ajustar */
+    position: relative;
+    padding-bottom: 59%;
+    
+}
+div.video>iframe{
+    position:absolute;
+    top:5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+aside{
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 10px;
+    /*codigo acima deu um arredondamento nas bordas*/
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.699);
+}
+aside>ul{
+    list-style-type: '\✔️\00A0\00A0 ';
+    /*codigo acima serve para acresentar o emoji nas listas, OBS: esse 00A0 serve para da o espacamento para o emji, nao e compativel com todos navegadores*/
+    list-style-position: inside;
+    /*esse codigo acima faz com que as bolinhas da lista fiquem dentro*/
+    columns: 2;
+    /*codigo acima fez a lista ficarem divida em 2 */
+
+
+}
+aside h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    /*fiz a margina vazar pra fora*/
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+footer{
+    background-color: var(--cor6);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.8em;
+}
+
+footer>p{
+    color: white;
+
+}
+footer>p>a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: red;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="#" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="masculino"><label for="masculino">Masculino</label></input><br>
+
+            <input type="radio" name="sexo" id="feminino" checked><label for="feminino">Feminino</label>
+            <!--O Checked serve ja pra deixar marcado o que for desejado no caso o feminino ja vai ficar marcado-->
+            
+        </fieldset>
+        <fieldset>
+            <legend>Esporte</legend>
+            <input type="checkbox" name="basquete" id="esb"><label for="esb">Basquete</label><br>
+
+            <input type="checkbox" name="futebool" id="esf"><label for="esf">Futebol</label><br>
+
+            <input type="checkbox" name="volei" id="esv"><label for="esv">Volei</label>
+
+            
+        </fieldset>
+        <fieldset>
+            <legend>Outros input</legend>
+
+            <p>
+                <label for="cor">Cor</label>
+                <input type="color" name="ncor" id="cor" value="#34BBE0">
+            </p>
+            <p>
+                <label for="avalia">Avaliação</label>
+                <input type="range" name="ava" id="avalia" min="1" max="5" value="1">
+            </p>
+            <p>
+                <label for="img">Foto de perfil:</label>
+                <input type="file" name="imagem" id="img">
+            </p>
+
+        </fieldset>
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>

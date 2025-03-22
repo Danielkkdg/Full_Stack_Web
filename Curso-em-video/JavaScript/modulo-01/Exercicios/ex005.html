@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(223, 223, 223);
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(0, 0, 0);
+            font-family: 2em;
+        }
+        h1{
+            font-size: 3em;
+            text-align: center;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tesntando o documento</h1>
+    <p>Aqui vai o resultado</p>
+    <div id="msg">Click em min</div>
+    <p>aprendendo a usar o <strong>Dom</strong> em javascript</p>
+    <p id="exem">Tambem dar pra criar uma vareavel atraves das formulas de css: esse texto e um exemplo</p>
+    <script>
+        var corpo= window.document.body
+
+        var p1=window.document.getElementsByTagName('p')[0]
+        /*o codigo que fiz acima e para criar uma variavel p1 que pegou o primeiro paragrafo e o codigo abaixo serviu para mostra ele ou seja espelhando*/
+        window.document.write('Estar escrito acima  '+ p1.innerHTML)
+        /*Codigo acima serve para o que for digitado nele mostra na tela html*/
+
+        corpo.style.background='white'
+        /*criando variaves das tags posso mudara ate a cor de fundo e outras opcoes tmb*/
+        var d=window.document.getElementById('msg')
+        d.style.background='blue'
+        /*no caso acima foi criado uma vareavel atraves do id de uma tag do html*/
+
+        var exe=window.document.querySelector('p#exem')
+        exe.style.color='red'
+        /*criando variavel estilo css*/
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio-05</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+
+    <link rel="stylesheet" href="estilos/02style.css">
+</head>
+<body onresize="tamanhotela()">
+    <!--O onresize vai verificar o tamanho da tela-->
+    <header>
+        <h1>Meu site
+        </h1>
+
+        <p  id="butao" class="material-symbols-outlined" onclick="mostrar()">
+            menu
+        </p>
+        <menu id="tela">
+            <ul>
+                <li><a href="#">Opção 01</a></li>
+                <li><a href="#">Opção 02</a></li>
+                <li><a href="#">Opção 03</a></li>
+                <li><a href="#">Opção 04</a></li>
+                <li><a href="#">Opção 05</a></li>
+                
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores obcaecati consequuntur libero recusandae repellendus, tempora ipsum nam. Minima culpa maxime aperiam, necessitatibus fuga esse nihil dignissimos natus qui eos eaque!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, iure nobis quia impedit asperiores quod cupiditate. Ipsum praesentium necessitatibus minus, natus sunt sequi mollitia officiis libero labore eos, incidunt laborum!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus esse distinctio aliquid, obcaecati et pariatur repellendus totam nulla velit sapiente quaerat at ipsam ea molestiae consequatur voluptates minima perspiciatis ut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam modi exercitationem molestias accusantium necessitatibus recusandae. Ea natus necessitatibus veritatis harum numquam nihil eveniet fugit quisquam similique dicta. Earum, ea tenetur?</p>
+        </article>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        function tamanhotela(){
+            if(window.innerWidth>=768){
+                //nesse caso estou dizendo que se o tamanho da tela for maior ou igual a 768
+                tela.style.display='block'
+            }else{
+                tela.style.display='none'
+            }
+        }
+        function mostrar(){
+            if (tela.style.display == 'block'){
+                tela.style.display='none'
+            }else{
+                tela.style.display='block'
+            }
+            
+            
+        }
+    </script>
+</body>
+</html>

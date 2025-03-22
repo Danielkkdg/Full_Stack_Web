@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 768px) {
+
+
+    header{
+        text-align: left;
+        padding: 5px;
+        margin: 0px;
+    }
+    header>h1{
+        color: white;
+        font-size: 3em;
+        text-align: center;
+        text-shadow: 4px 4px 6px black;
+    }
+
+
+    p#butao{
+        display: none;
+    }
+    
+    header>menu{
+        display: block;
+        
+    }
+
+    header>menu>ul>li{
+        border: none;
+        display: inline-block;
+
+    }
+    main>article{
+        margin-top: 30px;
+        width: 500px;
+    }
+    
+    main>article>h2{
+        font-size: 2em;
+    }
+    
+}

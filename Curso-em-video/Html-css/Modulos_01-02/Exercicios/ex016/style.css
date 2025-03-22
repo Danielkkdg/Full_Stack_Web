@@ -1,0 +1,16 @@
+main{
+    margin: auto;
+    width: 650px;
+    font: normal 1em arial,verdana,serif;
+    text-align: left;
+    background-color: rgb(189, 98, 98);
+    padding: 20px;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: justify;
+    text-indent: 20px;
+    /*text-indent server como paragrafo*/
+}

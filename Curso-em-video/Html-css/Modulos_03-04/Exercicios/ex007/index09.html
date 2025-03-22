@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post" autocomplete="on">
+        <p>
+            <label for="ano">Em que ano voce nasceu?</label>
+            <input type="number" name="num" id="ano" required min="4" max="4" oninput="calcular()">
+        </p>    
+        
+        <p>
+            <label for="resultado">Sua idade é:</label>
+            <output id="res">0</output>
+        </p>
+
+    </form>
+    
+    <script>
+        function calcular(){
+
+            let atual = new Date().getFullYear()
+            
+            res.innerHTML=Number(atual)-Number(ano.value)
+
+        }
+        
+        
+    </script>
+</body>
+</html>

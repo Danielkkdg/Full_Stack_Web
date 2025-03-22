@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .area{
+            background-color: rgb(11, 107, 43);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            font-size: 1.5em;
+            margin: auto;
+            margin-bottom: 30px;
+
+        }
+        /*esse codigo a baixo onclick diz que vai ser comp um botão mas para realmente acontecer algo e necessario criar uma funçaõ logo abaixo*/
+        /* onmouseenter == quando o mouse estiver acima da janela desejada
+        onmouseout == ao sair com o mouse da janela desejada*/
+    </style>
+</head>
+
+<body>
+    
+    <div class="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sai()">
+        interaja
+    </div>
+    
+    
+
+    <script>
+        var a = window.document.querySelector('.area')
+
+        a.addEventListener('click' , clicar)
+        a.addEventListener('mouuseenter', entrar)
+        a.addEventListener('mouseout', sai)
+        /*forma mais resumida do que la de cima
+        se apagar essa forma  as funcoes vão manter pq la em cima ainda tem o msm formato ativando*/
+
+        
+        function clicar(){
+            
+            a.innerText='Clicou'
+            //função criada com sucesso chamada clicar
+            a.style.background='red'
+        }
+        function entrar(){
+            a.innerText='Entrou'
+            a.style.background='blue'
+        }
+        function sai(){
+            a.innerText='Saida'
+            a.style.background='rgb(11, 107, 43)'
+            a.style.borderRadius='10px'
+        }
+
+    </script>
+    
+</body>
+</html>

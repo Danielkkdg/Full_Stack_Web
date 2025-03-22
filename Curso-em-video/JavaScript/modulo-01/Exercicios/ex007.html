@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora </title>
+    <style>
+        body{
+            background-image: linear-gradient( to bottom, rgb(50, 241, 255),rgb(21, 88, 165));
+            background-attachment: fixed;
+            
+        }
+        main{
+            width: 650px;
+            margin:auto;
+            background-color: rgb(113, 223, 250);
+            padding: 15px;
+            text-align: center;
+            padding-bottom: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 10px;
+
+        }
+        h1{
+            font-size: 3em;
+        }
+        #n1,#n2{
+            background-color: rgb(255, 255, 255);
+        }
+        input{
+            
+            padding: 5px;
+            background-color: white;
+        }
+        div{
+            margin-top: 20px;
+            text-align: justify;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h1>Calculadora</h1>
+        <input type="number" name="n1" id="n1">
+        <input type="number" name="n2" id="n2">
+        <input type="button" value="Resposta" onclick="somar()">
+        <div id="rep" >
+        </div>
+    </main>
+
+    <script>
+        function somar(){
+            
+            var tx1=window.document.getElementById('n1')
+            var tx2=window.document.getElementById('n2')
+            var rep=window.document.getElementById('rep')
+            var n1=Number(tx1.value)
+            var n2=Number(tx2.value)
+            var soma= n1+n2
+            var sub=n1-n2
+            var mult=n1*n2
+            var did=n1/n2
+            rep.style.background='white'
+            rep.style.borderRadius='10px'
+
+            rep.innerHTML = ` soma dos numeros ${n1} + ${n2} = ${soma} <br><br>
+            subtração dos numeros ${n1} - ${n2} = ${sub} <br><br>
+            mutiplicação dos numeros ${n1} x ${n2} = ${mult} <br><br>
+            divisão dos numeros ${n1} / ${n2} = ${did}`
+
+        }
+    </script>
+</body>
+</html>

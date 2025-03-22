@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletim</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <header>
+        <h1>Boletim</h1>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2" colspan="">
+                        Area
+                    </th>
+                    <th rowspan="2" colspan="2">Disciplina</th>
+                    <th colspan="2">Notas</th>
+                    <th rowspan="2">Media</th>
+                </tr>
+                <tr>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="4" class="area">
+                        Exatas
+                    </th>
+                    <td colspan="2" class="materias">Matematica</td>
+                    <td colspan=> <input type="number" name="m1" id="m1">
+                    </td>
+                    <td><input type="number" name="m2" id="m2"></td>
+                    <td id="resm">00</td>
+                </tr>
+                <tr>
+        
+                    <td colspan="2" class="materias">Fisica</td>
+                    <td> <input type="number" name="f1" id="f1"></td>
+                    <td><input type="number" name="f2" id="f2">
+                    </td>
+                    <td id="resf">00</td>
+                </tr>
+                <tr>
+        
+                    <td colspan="2" class="materias" >Quimica</td>
+                    <td> <input type="number" name="q1" id="q1"></td>
+                    <td><input type="number" name="q2" id="q2"></td>
+                    <td id="resq">00</td>
+                </tr>
+                <tr>
+        
+                    <td colspan="2" class="materias" >Biologia</td>
+                    <td> <input type="number" name="b1" id="b1"></td>
+                    <td><input type="number" name="b2" id="b2"></td>
+                    <td id="resb">00</td>
+                </tr>
+                <tr>
+                    <th colspan="5" class="materias" >Media de exatas</th>
+                    <th id="totalexatas">00</th>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="area">
+                        Humanas
+                    </th>
+                    <td colspan="2" class="materias">Portugues</td>
+                    <td colspan=> <input type="number" name="p1" id="p1">
+                    </td>
+                    <td><input type="number" name="p2" id="p2"></td>
+                    <td id="resp">00</td>
+                </tr>
+                <tr>
+        
+                    <td colspan="2" class="materias">Historia</td>
+                    <td colspan=> <input type="number" name="h1" id="h1">
+                    </td>
+                    <td><input type="number" name="h2" id="h2"></td>
+                    <td id="resh">00</td>
+                </tr>
+                <tr>
+                    <th colspan="5" class="materias" >Media de humanas</th>
+                    <th id="totalhumanas">00</th>
+                </tr>
+        
+            </tbody>
+        </table>
+
+        <input type="button" value="Gerar Resultado" onclick="resultado()" id="gerar">
+    </main>
+
+   
+    <script src="sricpt.js"></script>
+
+
+</body>
+</html>

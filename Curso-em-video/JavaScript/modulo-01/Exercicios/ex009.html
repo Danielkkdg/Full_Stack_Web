@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nativos</title>
+    <style>
+        body{
+            background-color: rgb(0, 170, 0);
+        }
+        main{
+            width: 650px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: auto; 
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;         
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 45px;
+        }
+        #txt1{
+            width: 70px;
+            height: 20px;
+            
+        }
+        input{
+            height: 26px;
+            width: 70px;
+        }
+        #resp{
+            margin-top: 15px;
+            margin-bottom: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Bem vindo ao
+        Brasil</h1>
+        
+        
+        Digite sua nacionalidade <input type="text" name="txt1" id="txt1">
+        <input type="button" value="Click" onclick="verifique()">
+        <div id="resp">
+            ...
+        </div>
+    </main>
+
+    <script>
+        function verifique(){
+            var text=window.document.getElementById('txt1')
+            var res=window.document.getElementById('resp')
+            var t=String(text.value)
+            if(t=="Br" || t=="br" || t=="Brasil" ){
+                res.innerHTML='Brasileiro...'
+            }
+            else{
+                res.innerHTML='Estrageiro...'
+            }
+        }
+        
+    </script>
+
+    
+</body>
+</html>

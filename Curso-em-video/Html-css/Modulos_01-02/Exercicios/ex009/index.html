@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinamica das imagens</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>abri em dispositivos diferentes...</p>
+    <meta>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/Pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/Media.png" type="image/png">
+        <img src="imagens/Grande.png" alt="Grande">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Audio em HTML5</p>
+    
+    <!--MP3,NAV,OGG-->
+
+    <audio preload="metadata" autoplay controls >
+        <source src="midia/WhatsApp Audio 2025-01-10 at 11.14.19.mpeg" type="audio/mpeg">
+        <source src="formato music ogg" type="audio/ogg">
+        <source src="formato music nav" type="audio/nav">
+        <!--Tem navegador que n reconhece o mp3,
+        sendo possivel trocar o formato para os acimas , e como estaou nessa ordem ele vai carrgar primeiro o mp3, caso n consigar rodar , ele vai tentar o proximo,OBS: dps do src= tem q ter o arquivo do audio no formato desejado...-->
+    </audio>
+    <p>Caso não consigar escutar o audio baixe o audio <a href="midia/WhatsApp Audio 2025-01-10 at 11.14.19.mpeg">aqui</a></p>
+</body>
+</html>

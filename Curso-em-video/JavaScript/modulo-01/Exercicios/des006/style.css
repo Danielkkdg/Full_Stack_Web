@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(228, 72, 137);
+    margin: 0%;
+
+}
+header{
+    text-align: center;
+    color: white;
+
+}
+section{
+    margin: auto;
+    padding: 15px;
+    background-color: white;
+    width: 650px;
+    border-radius: 10px;
+
+}
+footer{
+    text-align: center;
+
+    color: white;
+    
+}
+select{
+    display: block;
+    width: 120px;
+    
+}

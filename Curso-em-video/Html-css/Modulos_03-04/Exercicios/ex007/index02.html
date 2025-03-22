@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Login
+    </h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            
+            <label for="usuario">Usuario:</label>
+            <input type="text" name="id" id="usuario" required minlength="5" maxlength="15" placeholder="Nome de usuario" autocomplete="username" >
+
+            <!--O required serve para obrigar o usuario a prencher o campo se ele estiver vazio-->
+
+            <!--O minlength serve para dizer que no minino o campo precisar ter 5 caracter, e o maxlength diz que o maximo e 15-->
+
+            <!--O placeholder serve para deixar algum texto de fundo da caxinha  -->
+
+            <!--autocomplete no input serve para dar um sentido no input dizendo se ele e um nome ou se uma senha servindo para buscar mas opcoes que o usuario tenha buscado para prencher o campo em outros sites-->
+        </p>
+
+        <p>
+            <label for="senha">Senha:</label>
+            <input type="password" name="sen" id="senha" required minlength="8" maxlength="8" autocomplete="current-password" size="8">
+            <!--OBS: o current-password da um sentindo de login, se vc quiser criar uma senha dano sentindo de criar vc pode usar o  new-password -->
+            <!-- o size nesse caso ta servindo para dizer que na caixinha vai exibir 8 caracter-->
+        </p>
+        <p>
+            <button type="submit">Enviar</button>
+
+            <button type="reset">Limpar</button>
+        </p>
+
+    </form>
+</body>
+</html>

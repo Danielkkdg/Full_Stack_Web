@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            /*decotation e para tira os traços abaixo dos links*/
+            font-weight: bold;
+            
+            
+        }
+        a:visited{
+            /*sites não visitado*/
+            color: darkred;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+            /*esse codigo faz com que ao passasar o mouse nos links vai aparecer a listra abaixo e deixar ele preto*/
+        }
+        a:active{
+            color: blue;
+            /*ao clickar no link ele vai ficar azul*/
+        }
+        a::before{
+            content: '♘';
+            color: black;
+            /*o before vai sgnificar como antes sendo o ao contrario do after*/
+        }
+        .especial{
+            /*class criada*/
+            color: cadetblue;
+            background-color: aquamarine;
+        }
+        .especial::before{
+            /*class com o pseudo-element*/
+            content:'♕';
+        }
+        .especial::after{
+            content: '♕';
+            color: black;
+        }
+        a::after{
+            /*com dois :: usando o after dar um sentindo de depois , no caso dps do "A" que sgnificar o link, int ficar dps do link acresetar o content dano uma palavra pra ele que no caso e ♘ */
+            content: ' ♘';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(212, 93, 93);
+        }
+    </style>
+</head>
+<body>
+    <h1>Pesonalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=BE6lj92oHSs&ab_channel=EiNerd">Repositorio GitHUb</a></li>
+        <li><a href="https://github.com/geandrol/cookbook_java_fullstack/tree/main/02_http">Canal youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/" class="especial">site do curso</a></li>
+        <li><a href="https://www.facebook.com">site do facebook</a></li>
+        <li><a href="https://x.com">Twitter</a></li>
+    </ul>
+    
+</body>
+</html>

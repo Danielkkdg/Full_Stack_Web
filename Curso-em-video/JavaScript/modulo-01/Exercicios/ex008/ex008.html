@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        body{
+            background-color: darkgray;
+        }
+        #radar{
+            background-color: rgb(201, 57, 57);
+            width: 140px;
+            padding: 0%;
+            margin: 0%;
+            margin: auto;
+            border-radius: 250px;
+            color: white;
+        }
+        main{
+            background-color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 650px;
+            margin: auto;
+            padding: 10px;
+        }
+        #res{
+            padding: 20px;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div id="radar">
+            <h1>Radar <br>
+              40km</h1>
+        </div>
+        <p>Digite sua velocidade</p>
+          <input type="number" name="vel" id="vel">
+          <input type="button" value="Resposta" onclick="resultado()">
+        <div id="res">
+            ...
+        </div>
+    </main>
+    <script>
+        function resultado(){
+            var tx1=window.document.getElementById('vel')
+            var rep=window.document.getElementById('res')
+            var a=Number(tx1.value)
+            
+
+            if (a>40){
+                rep.innerHTML=`Sua velocidade foi ${a}km <strong>multado</strong>...`
+            }
+            else{
+                rep.innerHTML=`Padrão...`
+            }
+        }
+            
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <h1>primeiro formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <!--No caso do action server para enviar o formulario para a linguagem que deseja.. no caso ai foi escolhido o php-->
+
+        <!--O method post serve para tira os dados coletado da url mas não protege seus dados e quando os dados coletados são muito grande tmb e indicado usar o post-->
+        
+        <!--O autocomplete off serviu paara desligar as caixas de sugestoes..-->
+        <p>
+            <label for="inome">Nome:</label> <input type="text" name="nome" id="inome">
+        </p>
+        <!--os label serve para dizer que o text selecionado tem relação com id desejado.-->
+        <p>
+            <label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p><input type="submit" value="Enviar">
+        <!--OBS:esse submit tem um sentido de enviar-->
+        </p>
+
+    </form>
+
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+*{
+    margin: 10px;
+    padding: 10px;
+}
+html{
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+p{
+    font-size: 1.5em;
+    list-style: 1.5em;
+    text-align: justify;
+    text-indent: 10px;
+
+}
+menu{
+    display: none;
+    /*esse display none serve para tira o menu na hr de imprimir*/
+}
+
+article::after{
+    content: "Esse site foi criado por Daniel França Oliveira";
+}
+/*esse codigo acima serve para mandar uma menssagem dps do article ja que ele foi sitado*/
+
+article{
+    width: 100%;
+}

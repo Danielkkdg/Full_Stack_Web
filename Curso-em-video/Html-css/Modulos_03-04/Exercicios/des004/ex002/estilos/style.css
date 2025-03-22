@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #233EFF;
+    color: white;
+    background-size: contain;
+    /* o contain serve para ocupar a tela toda*/
+    background-repeat: no-repeat;
+}
+h1{
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen {
+    
+}

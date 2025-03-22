@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(42, 141, 235);
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    color: white;
+    text-align: center;
+}
+section{
+    height: 300px;
+    width: 700px;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    padding: 15px;
+}
+footer{
+    text-align: center;
+    color: white;
+}
+div{
+    padding: 5px;
+}
+section>div>#slc{
+    width: 120px;
+
+}

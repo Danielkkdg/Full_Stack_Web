@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+    background-color: antiquewhite;
+}
+header{
+    color: white;
+    
+}
+section{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+
+}
+#text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+#imagem{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#foto{
+    width: 250px;
+    border-radius: 50%;
+    height: 250px;
+}
+       
+footer{
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    font-style: italic;
+
+}

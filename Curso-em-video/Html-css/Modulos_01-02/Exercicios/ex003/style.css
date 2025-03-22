@@ -1,0 +1,42 @@
+body{
+    text-align: center;
+    background-image: url(imagens/fundo.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    /* serve para a imagen não andar ficar fixada background-attachment: fixed;
+     o codigo a baixo serve para a imagagem n repetir
+    background-repeat: no-repeat;*/
+    /* serve como foco na parte inferior pra cima usando o bottom background-position: bottom;*/
+}
+img{
+    float: left;
+}
+#css{
+    float: right;
+}
+#js{
+    float: inherit;
+}
+h1{
+    text-align: center;
+    font-style: italic;
+    font-size: 2.5em;
+    text-transform:none ;
+}
+
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 300px;
+    /*largura minima da tela*/
+    max-width: 1000px;
+    /*largura maxima da tela*/
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+    text-indent: 25px;
+}
+p{
+    line-height: 1.5;
+}

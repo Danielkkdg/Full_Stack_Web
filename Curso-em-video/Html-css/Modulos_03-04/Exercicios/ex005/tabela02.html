@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            border: 1px solid black;
+            padding: 5px;
+            font-size: 1.5em;
+            background-color: rgb(191, 181, 250);
+            color: rgb(0, 0, 0);
+
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        thead,tfoot{
+            background-color: rgb(1, 1, 129);
+            color: white;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 5px;
+            
+            
+        }
+        .num{
+            text-align: right;
+        }
+        tbody >tr:nth-child(2n){
+            background-color: rgb(172, 172, 172);
+            /*deixando as fileiras das tabelas zebrada no caso esse 2n vai ser a cada duas fileira a segunda vai receber background color
+            se eu quiser so as fileiras impar coloco odd e even para ser par*/
+        }
+        thead > tr> th{
+            position: sticky;
+            top: 0%;
+            background-color: rgb(1, 1, 129);
+            /* para fazer o efeito de o thead descer junto com a tabela vc vai na table e deixa ela com a position realitve e dps faz essa configuração acima*/
+        }
+    
+    </style>
+</head>
+<body>
+    
+    <h1>Minha segunda tabela</h1>
+    <!--TH e titulo 
+    TD e dado--> 
+    <table>
+        <caption>Estados e suas populaçoes</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <!--scope col sgnificar que o th estar se referindo a sua coluna horizontal-->
+                <th scope="col" style="width: 100px;">População</th>
+                <!--Se tiver mais de uma coluna que se refira ao titulo usamos o colgroup-->
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.973.190</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.539.029</td>
+                
+            </tr>
+            
+            <tr>
+                <td>Rio de janeito</td>
+                <td class="num">5.973.190</td>
+            </tr>
+            <tr>
+                <td>Ceara</td>
+                <td class="num">2.973.190</td>
+            </tr>
+            <tr>
+                <td>Brasilia</td>
+                <td class="num">1.973.190</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <!--scope row estar se referindo a sua fileira vertical-->
+                <td class="num"><strong>55.512.219</strong></td>
+            </tr>
+
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam illo, aut voluptatem laborum dicta sed neque provident voluptatibus repellat incidunt, at voluptas quisquam numquam suscipit. Quas ab quasi veritatis quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rem, optio deleniti commodi quod eius aperiam facilis rerum explicabo ipsam voluptatibus consequatur? Similique voluptate placeat nulla laudantium doloribus rem veniam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis omnis corrupti sit culpa minima beatae tenetur cumque nesciunt nisi? Temporibus impedit quisquam at officiis porro veniam qui accusamus atque quae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus numquam id eaque, tenetur corrupti sint ab! Suscipit optio eius assumenda aspernatur, quasi delectus? Blanditiis quis ad soluta et voluptatibus quidem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore veniam ex placeat doloremque cumque qui nobis, eius maxime molestias quisquam quaerat accusamus dicta? Reprehenderit inventore at qui architecto corporis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam illo, aut voluptatem laborum dicta sed neque provident voluptatibus repellat incidunt, at voluptas quisquam numquam suscipit. Quas ab quasi veritatis quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rem, optio deleniti commodi quod eius aperiam facilis rerum explicabo ipsam voluptatibus consequatur? Similique voluptate placeat nulla laudantium doloribus rem veniam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis omnis corrupti sit culpa minima beatae tenetur cumque nesciunt nisi? Temporibus impedit quisquam at officiis porro veniam qui accusamus atque quae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus numquam id eaque, tenetur corrupti sint ab! Suscipit optio eius assumenda aspernatur, quasi delectus? Blanditiis quis ad soluta et voluptatibus quidem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore veniam ex placeat doloremque cumque qui nobis, eius maxime molestias quisquam quaerat accusamus dicta? Reprehenderit inventore at qui architecto corporis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam illo, aut voluptatem laborum dicta sed neque provident voluptatibus repellat incidunt, at voluptas quisquam numquam suscipit. Quas ab quasi veritatis quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rem, optio deleniti commodi quod eius aperiam facilis rerum explicabo ipsam voluptatibus consequatur? Similique voluptate placeat nulla laudantium doloribus rem veniam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis omnis corrupti sit culpa minima beatae tenetur cumque nesciunt nisi? Temporibus impedit quisquam at officiis porro veniam qui accusamus atque quae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus numquam id eaque, tenetur corrupti sint ab! Suscipit optio eius assumenda aspernatur, quasi delectus? Blanditiis quis ad soluta et voluptatibus quidem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore veniam ex placeat doloremque cumque qui nobis, eius maxime molestias quisquam quaerat accusamus dicta? Reprehenderit inventore at qui architecto corporis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam illo, aut voluptatem laborum dicta sed neque provident voluptatibus repellat incidunt, at voluptas quisquam numquam suscipit. Quas ab quasi veritatis quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rem, optio deleniti commodi quod eius aperiam facilis rerum explicabo ipsam voluptatibus consequatur? Similique voluptate placeat nulla laudantium doloribus rem veniam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis omnis corrupti sit culpa minima beatae tenetur cumque nesciunt nisi? Temporibus impedit quisquam at officiis porro veniam qui accusamus atque quae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus numquam id eaque, tenetur corrupti sint ab! Suscipit optio eius assumenda aspernatur, quasi delectus? Blanditiis quis ad soluta et voluptatibus quidem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore veniam ex placeat doloremque cumque qui nobis, eius maxime molestias quisquam quaerat accusamus dicta? Reprehenderit inventore at qui architecto corporis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam illo, aut voluptatem laborum dicta sed neque provident voluptatibus repellat incidunt, at voluptas quisquam numquam suscipit. Quas ab quasi veritatis quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rem, optio deleniti commodi quod eius aperiam facilis rerum explicabo ipsam voluptatibus consequatur? Similique voluptate placeat nulla laudantium doloribus rem veniam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis omnis corrupti sit culpa minima beatae tenetur cumque nesciunt nisi? Temporibus impedit quisquam at officiis porro veniam qui accusamus atque quae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus numquam id eaque, tenetur corrupti sint ab! Suscipit optio eius assumenda aspernatur, quasi delectus? Blanditiis quis ad soluta et voluptatibus quidem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore veniam ex placeat doloremque cumque qui nobis, eius maxime molestias quisquam quaerat accusamus dicta? Reprehenderit inventore at qui architecto corporis!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam illo, aut voluptatem laborum dicta sed neque provident voluptatibus repellat incidunt, at voluptas quisquam numquam suscipit. Quas ab quasi veritatis quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rem, optio deleniti commodi quod eius aperiam facilis rerum explicabo ipsam voluptatibus consequatur? Similique voluptate placeat nulla laudantium doloribus rem veniam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis omnis corrupti sit culpa minima beatae tenetur cumque nesciunt nisi? Temporibus impedit quisquam at officiis porro veniam qui accusamus atque quae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus numquam id eaque, tenetur corrupti sint ab! Suscipit optio eius assumenda aspernatur, quasi delectus? Blanditiis quis ad soluta et voluptatibus quidem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore veniam ex placeat doloremque cumque qui nobis, eius maxime molestias quisquam quaerat accusamus dicta? Reprehenderit inventore at qui architecto corporis!</p>
+    
+</body>
+</html>

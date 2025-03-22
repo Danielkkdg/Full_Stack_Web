@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Testando formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="name" id="nome" maxlength="30" autocomplete="name" placeholder="Nome completo" required>
+        </p>
+        <p>
+            <label for="media">Media:</label>
+            <input type="number" name="med" id="media" required min="0" max="10" placeholder="0 a 10" step="0.5" >
+            <!--O step serve para que ele var em 1 a 1.5 a 2 a 2.5, vc pode ajustar pra quanto vc quiser-->
+        </p>
+        <p>
+            <label for="mes">Mes:</label>
+            <input type="month" name="mon" id="mes" value="2022-07">
+            <!--No caso do value vc usando ele pode deixar ja um registro ativado-->
+        </p>
+        <p>
+            <label for="dia">Dia:</label>
+            <input type="date" name="day" id="dia">
+        </p>
+        <p>
+            <label for="hora">Hora:</label>
+            <input type="time" name="hr" id="hora" value="13:10">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
+    
+</body>
+</html>

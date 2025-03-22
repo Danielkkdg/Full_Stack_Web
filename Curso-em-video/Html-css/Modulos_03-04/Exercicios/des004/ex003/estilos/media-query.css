@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/*     Versão para os demais
+----------------------------------------
+  Extrapequenos: max-width:600px
+
+  Dispositivos pequenos:min-width: 600px
+
+  Dispositivos médios:min-width: 768px
+
+  Dispositivos grandes: min-width: 992px
+
+  Dispositivos extragrandes: min-width: 1200px
+*/
+@media print  {
+    *{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.5em;
+        
+    }
+    body{
+        background-image: url(../imagens/back-print.jpg)/*desnecessario*/;
+        
+
+    }
+    img#iphone{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#pc{
+        display: none;
+    }
+    img#impressora{
+        display: block;
+    }
+    img#tv{
+        display: none;
+    }
+   
+    main::after{
+        /*esse codigo acima sgnifica que dps do main vai ter essa mensagem abaixo*/
+        content: 'Não ira mostrar o fundo dar imagem pq impressora so imprimir o fundo branco';
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width:992px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#iphone{
+        display: none;
+    }
+    img#tablet{
+        display: block;
+    }
+    img#pc{
+        display: none;
+    }
+    img#impressora{
+        display: none;
+    }
+    img#tv{
+        display: none;
+    }
+    
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#iphone{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#pc{
+        display: block;
+    }
+    img#impressora{
+        display: none;
+    }
+    img#tv{
+        display: none;
+    }
+    
+    
+    
+}
+
+@media screen and (min-width: 1200px)  {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#iphone{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#pc{
+        display: none;
+    }
+    img#impressora{
+        display: none;
+    }
+    img#tv{
+        display: block;
+    }
+    
+    
+    
+}
+

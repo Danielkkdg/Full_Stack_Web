@@ -1,0 +1,40 @@
+:root{
+    --cor01:#540D6E;
+    --cor02:#EE4266;
+    --cor03:#FFD23F;
+    --cor04:#F3FCF0;
+    --cor05:#1F271B;
+
+
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+
+}
+header{
+    text-align: center;
+    background-color: var(--cor01);
+    color: white;
+    padding: 10px;
+
+}
+main{
+    padding: 20px;
+    width: 350px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: var(--cor03);
+    text-align: justify;
+    border-radius: 10px;
+
+}
+#login{
+    text-align: center;
+    
+}
+#email,#senha{
+    width: 125px;
+}
