@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flex Direction</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Direction</title>
   <!-- HINT:
   https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
   https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators 
@@ -14,15 +13,21 @@
     .container {
       color: white;
       border: 5px solid gold;
-      display: flex;
+      display: inline-flex;
+      flex-direction: column;
+    }
+    .container>*{
+        flex-basis: 100px;
+        
+       
     }
 
     /*
-Select all the elements that are the direct
-children of the .container class.
+Selecione todos os elementos que são o direto
+filhos da classe .container.
     */
 
-    .red {background-color: #eb4d4b;}
+    .red {background-color: #eb4d4b; }
     .orange {background-color: #f0932b;}
     .yellow {background-color: #f6e58d;}
     .green {background-color: #6ab04c;}
